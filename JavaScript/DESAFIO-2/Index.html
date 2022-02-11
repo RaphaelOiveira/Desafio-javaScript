@@ -1,0 +1,50 @@
+
+    <html>
+        <head>
+        <title>ViaCEP Webservice</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <script src="JS/Java.js"></script>
+        <link rel="stylesheet" href="KKJ/KK.css">
+    
+       
+        </head>
+        
+    
+        <body>
+          <header class="flex">
+            <h1>ME ACHA</h1>
+            <h5>ENCONTRE UM ENDEREÇO PELO NÚMERO DO CEP</h5>
+    
+            <span id="IC" class="material-icons icon flex">
+              travel_explore
+              </span>
+        </header>
+    
+        
+
+        <!-- Inicio do formulario -->
+        <main class="flex">
+          <form class="flex" method="get" action=".">
+
+            <label>Cep</label>
+            <input name="cep" type="text" id="cep" value="" size="2" maxlength="9"
+                   onblur="pesquisacep(this.value);" /><br />
+            <label>Rua</label>
+            <input name="rua" type="text" id="rua" size="60" /><br />
+            <label>Bairro</label>
+            <input name="bairro" type="text" id="bairro" size="40" /><br />
+            <label>Cidade</label>
+            <input name="cidade" type="text" id="cidade" size="40" /><br />
+            <label>Estado</label>
+            <input name="uf" type="text" id="uf" size="2" /><br />
+            <label>IBGE</label>
+            <input name="ibge" type="text" id="ibge" size="8" /><br />
+
+            <input id="ENV" type="button" value="Buscar" name="botão">
+          </form>
+        </body>
+    
+        </html>
+        
